@@ -55,16 +55,13 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>App Development</span><br>Building iOS apps</li>
-                            <li><span>Frontend Developer</span><br>Designing Web/App interfaces</li>
-                            <li><span>Backend Developer</span><br>Database</li>
+                            <li><span>May 2023-Aug 2023</span><br>Innovation Developer</li>
+                            <li><span>May 2022-Aug 2022</span><br>QA Developer</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>App Development</span><br>Building iOS apps</li>
-                            <li><span>Frontend Developer</span><br>Designing Web/App interfaces</li>
-                            <li><span>Backend Developer</span><br>Database</li>
+                            <li><span>2021-2026</span><br>University of Waterloo, Bachelor in Computer Science</li>
                         </ul>
                     </div>
                 </div>
@@ -72,7 +69,19 @@
         </div>
     </div>
     <script>
-        var tablinks = document.getElementByClassName("tab-links");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
     </script>
     
 
