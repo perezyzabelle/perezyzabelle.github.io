@@ -171,30 +171,7 @@
                         <a href="https://github.com/perezyzabelle"><i class="fa-brands fa-github"></i></a></a>
                     </div>
                 </div>
-                <div class="contact-right">
-                    <form onsubmit="sendEmail(); reset(); return false;">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email required">
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-                <script src="https://smtpjs.com/v3/smtp.js"></script>
-                <script>
-                    function sendEmail() {
-                        mail.send({
-                            Host: "smtp.gmail.com",
-                            Username: "tigerbelle09@gmail.com",
-                            Password: "password",
-                            To: 'perezyzabelle@gmail.com',
-                            From: document.getElementById("email").value,
-                            Subject: "New Contact Form Enquiry",
-                            Body: "And this is the body"
-                        }).then(
-                            message => alert(message)
-                        );
-                    }
-                </script>
+                
                 <div class="copyright">
                     <p>Copyright @ Yzabelle 2023 </p>
                 </div>
